@@ -24,22 +24,15 @@ Avg = Sum / 10
 console.log(Avg)
 
 
-
 //Average of given numbers
 
-function arrayAverage(arr){
-    var sum = 0;
-    for(var i in arr) {
-        sum += arr[i];
-    }
-    var numbersCnt = arr.length;
-    return (sum / numbersCnt);
-}
-var arr = new Array(4, 10, 22, -30, 55);
-var avg = arrayAverage(arr);
-console.log(avg)
-
-var arr = new Array(68, 7, -22, 9, 100);
-var avg = arrayAverage(arr);
-console.log(avg)
-
+var [A, B, C, D, E, F, G, H, I, J, K] = [4, 10, 22, -30, 55, 68, 7, -22, 9, 100]
+Sum1 = A + B + C + D + E
+Avg1 = Sum1/5
+console.log(Avg1)
+Sum2 = F + G + H + I + J
+Avg2 = Sum2/5
+console.log(Avg2)
+Sum = Sum1 + Sum2 
+Avg = Sum / 10
+console.log(Avg)

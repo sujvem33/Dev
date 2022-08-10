@@ -1,0 +1,246 @@
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev
+$ ls
+Homework/  Labs/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev
+$ mkdir projects
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev
+$ cd Labs
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs
+$ mkdir Starwarsterminal
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs
+$ ls
+Starwarsterminal/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs
+$ cd Starwarsterminal/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal
+$ mkdir galaxy-far-far-away
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal
+$ ls
+galaxy-far-far-away/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal
+$ touch commands.txt
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal
+$ ls
+commands.txt  galaxy-far-far-away/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal
+$ cd galaxy-far-far-away/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away
+$ mkdir death_star
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away
+$ ls
+death_star/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away
+$ cd death_star/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/death_star
+$ touch darth_vader.txt princess_leia.txt storm_trooper.txt
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/death_star
+$ ls
+darth_vader.txt  princess_leia.txt  storm_trooper.txt
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/death_star
+$ cd ..
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away
+$ mkdir tatooine
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away
+$ cd tatooine/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/tatooine
+$ touch luke.txt ben_kenobi.txt
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/tatooine
+$ mkdir millenium_falcon
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/tatooine
+$ cd millenium_falcon/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/tatooine/millenium_falcon
+$ touch han_solo.txt chewbaca.txt
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/tatooine/millenium_falcon
+$ ls
+chewbaca.txt  han_solo.txt
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/tatooine/millenium_falcon
+$ cd ..
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/tatooine
+$ mv ben_kenobi.txt obi_wan.txt
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/tatooine
+$ ls
+luke.txt  millenium_falcon/  obi_wan.txt
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/tatooine
+$ cd ..
+
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away
+$ cd death_star/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/death_star
+$ cp storm_trooper.txt ../tatooine/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/death_star
+$ ls
+darth_vader.txt  princess_leia.txt  storm_trooper.txt
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/death_star
+$ cd ..
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away
+$ cd tatooine/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/tatooine
+$ ls
+luke.txt  millenium_falcon/  obi_wan.txt  storm_trooper.txt
+
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/tatooine
+$ mv luke.txt millenium_falcon/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/tatooine
+$ ls
+millenium_falcon/  obi_wan.txt  storm_trooper.txt
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/tatooine
+$ cd millenium_falcon/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/tatooine/millenium_falcon
+$ ls
+chewbaca.txt  han_solo.txt  luke.txt
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/tatooine/millenium_falcon
+$ cd ..
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/tatooine
+$ mv obi_wan.txt millenium_falcon/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/tatooine
+$ mv millenium_falcon/ ../
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/tatooine
+$ cd ..
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away
+$ ls
+death_star/  millenium_falcon/  tatooine/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away
+$ ls
+death_star/  millenium_falcon/  tatooine/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away
+$ mv millenium_falcon death_star/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away
+$ ls
+death_star/  tatooine/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away
+$ cd death_star/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/death_star
+$ ls
+darth_vader.txt  millenium_falcon/  princess_leia.txt  storm_trooper.txt
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/death_star
+$ mv princess_leia.txt millenium_falcon/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/death_star
+$ ls
+darth_vader.txt  millenium_falcon/  storm_trooper.txt
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/death_star
+$ cd millenium_falcon/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/death_star/millenium_falcon
+$ ls
+chewbaca.txt  han_solo.txt  luke.txt  obi_wan.txt  princess_leia.txt
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/death_star/millenium_falcon
+
+
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-awath_star/millenium_falcon
+$ rm obi_wan.txt
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/death_star/millenium_falcon
+$ ls
+chewbaca.txt  han_solo.txt  luke.txt  princess_leia.txt
+
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away
+$ mkdir yavin_4
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away
+$ cd death_star/
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/death_star
+$ mv millenium_falcon/ ../yavin_4/
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/yavin_4
+$ mkdir x_wing
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/yavin_4/millenium_falcon
+$ mv princess_leia.txt ../ && mv luke.txt ../x_wing/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/yavin_4
+$ mv millenium_falcon/ x_wing/ ../
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/death_star
+$ mkdir tie_fighter_1 tie_fighter_2 tie_fighter_3
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/death_star
+$ ls
+darth_vader.txt  storm_trooper.txt  tie_fighter_1/  tie_fighter_2/  tie_fighter_3/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/death_star
+$ mv darth_vader.txt tie_fighter_1/
+
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/death_star
+$ cp storm_trooper.txt tie_fighter_2
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/death_star
+$ cp storm_trooper.txt tie_fighter_3
+
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/death_star
+$ mv tie_fighter_1 ../ && mv tie_fighter_2 ../ && mv tie_fighter_3 ../
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away
+$ rm -r tie_fighter_2 tie_fighter_3
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away
+$ cd x_wing/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/x_wing
+$ touch the_force.txt
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away/x_wing
+$ cd ..
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away
+$ rm -r death_star/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away
+$ ls
+millenium_falcon/  tatooine/  tie_fighter_1/  x_wing/  yavin_4/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away
+$ mv millenium_falcon yavin_4/
+
+sivaj@LAPTOP-UF1QENPA MINGW64 ~/Onedrive/Desktop/Dev/Labs/Starwarsterminal/galaxy-far-far-away
+$ mv x_wing yavin_4/

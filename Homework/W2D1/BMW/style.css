@@ -1,0 +1,12 @@
+.container{
+    /* border:solid black;
+    height:60px;
+    border-width:.2px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    
+}
+.logoImage{
+    justify-content: flex-end;
+}

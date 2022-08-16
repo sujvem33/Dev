@@ -1,0 +1,83 @@
+.mainContainer{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+}
+.instaImage{
+    
+    height: 500px;
+    width: 100%;
+    border: solid #dbdbdb;
+}
+.formPart{
+    padding-top:30px;
+    border: 1px solid #dbdbdb; 
+    max-height: 500px;
+    
+}
+.loginForm{
+    padding-left: 40px;
+     align-items:center;
+}
+.userName{
+    padding-top:30px;
+    text-align: center;
+    
+}
+.password{
+    padding-top: 10px;
+    text-align: center;
+    
+}
+.logoImage{
+    /* height: 50px;
+    text-align: center;
+    align-items: center; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.loginButton{
+    text-align: center;
+    padding-top: 10px;
+    width: 300px;
+    background-color: skyblue;
+    color: black;
+    border: white;
+}
+.loginButton:hover{
+    background-color:blue;
+}
+
+.or{
+    text-align: center;
+}
+.btn{
+    text-align: center;  
+}
+.btn:hover{
+    background-color: blueviolet;
+}
+.ForgotPass{
+    text-align: center;
+}
+.signupBtn{
+    text-align: center;
+}
+.signupBtn:hover{
+    background-color: blue;
+}
+.signupForm{
+    margin: auto;
+}
+.mainForm{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    border: 1px solid #dbdbdb;
+    max-width: 500px;
+}
+.loginBtn1:hover{
+        background-color: aqua;
+}

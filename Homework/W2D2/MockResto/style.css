@@ -1,0 +1,65 @@
+body{
+    background-color:grey;
+}
+
+
+.navContainer{
+    display:flex;
+    padding:15px;
+    justify-content: space-between;
+    
+}
+.logo{
+    width:30%;
+    height:40px;
+}
+
+.navTab{
+    margin-top:10px;
+    
+}
+.navTab:hover{
+    margin-top:10px;
+    color:crimson;
+}
+.navBtn{
+    height:40px;
+}
+.picContainer{
+    border:solid red;
+    border-width:.2px;
+    height:400px;
+    background-image: url('https://images.prismic.io/maggianos-prod/76ba6aaa-4bcf-4e03-861c-ff68db997acf_CEW_Family+Wranglers+%282%29.jpg?auto=compress,format&rect=0,3,1920,1272&w=616&h=408');
+    background-size:cover;
+
+}
+.mainTitle{
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top:20%;
+    text-align:center;
+}
+.learnBtn{
+    font-size:24px;
+    background-color: red;
+    color:white;
+    margin-left:40%;
+}
+.magi{
+    text-align:center;
+}
+.icon{
+    margin-left:46%;
+}
+.foodContainer{
+    display:flex;
+    justify-content: space-between;
+
+}
+.foodPic{
+    width:80%;
+    border-radius:22px;
+    border:solid red;
+    border-width:.2px;
+
+}

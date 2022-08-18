@@ -1,0 +1,46 @@
+body{
+    border: solid blue;
+    background-color: grey;
+}
+.menu{
+    text-align: center;
+}
+.lunch{
+    text-align: center;
+    border: solid blue;
+    border-width: 3px;
+    margin: 3px;
+}
+.brunch{
+    text-align: center;
+    border: solid blue;
+    border-width: 3px;
+    margin: 3px;
+    
+}
+.dinner{
+    text-align: center;
+    border: solid blue;
+    border-width: 3px;
+    margin: 3px;
+   
+    
+}
+#alcohol{
+    color: red;
+}
+#brunchheading{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#lunchheading{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#dinnerheading{
+    background-color: black;
+    color: white;
+    text-align: center;
+}

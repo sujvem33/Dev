@@ -10,9 +10,6 @@ let menu = {
 
 
 
-
-
-
 const doSomething = ()=>{
 
     let target = document.querySelector('.magi')

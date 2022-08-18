@@ -1,0 +1,74 @@
+body{
+    background-color: green;
+}
+.lionContainer {
+    border: solid blue;
+    padding: 20px;
+    display:flex;
+    justify-content: space-evenly;
+    margin-right: 50%;
+}
+.lion1{
+    height: 100px;
+    
+}
+.lion2{
+    height: 100px;
+}
+.lion3{
+    height: 100px;
+}
+.snakeContainer {
+    border: solid blue;
+    padding: 20px;
+    display:flex;
+    justify-content: space-evenly;
+    margin-left: 50%;
+}
+.snake1{
+    height: 100px;
+    width :auto;
+}
+.snake2{
+    height: 100px;
+}
+.snake3{
+    height: 100px;
+}
+.aquaticContainer {
+    border: solid blue;
+    padding: 20px;
+    display:flex;
+    justify-content: space-evenly;
+    margin-left: 50%;
+}
+.aquatic1{
+    height: 100px;
+}
+.aquatic2{
+    height: 100px;
+}
+.aquatic3{
+    height: 100px;
+}
+.SquirrelContainer {
+    border: solid blue;
+    padding: 20px;
+    display:flex;
+    justify-content: space-evenly;
+    margin-right: 50%;
+}
+.squirrel1{
+    height: 100px;
+}
+.squirrel2{
+    height: 100px;
+}
+.squirrel3{
+    height: 100px;
+}
+img:hover{
+  
+    transform: scale(1.5);
+    transition: 5s;
+}

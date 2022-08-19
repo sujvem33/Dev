@@ -1,0 +1,79 @@
+.header{
+    background-color: rgb(35, 66, 35);
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+}
+.logo{
+    height: 30px;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 10px;
+}
+.heading1{
+    text-align: center;
+}
+.bikeContainer{
+    background-color: grey;
+    position: relative;
+    bottom: 200px;
+}
+.imageContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin:6px;
+    justify-content: space-evenly;
+}
+.bikeimages{
+    /* margin:12px; */
+    width: 30%;
+    
+}
+.bike{
+    width: 100%;
+}
+.sporttype{
+    text-align: center;
+}
+.bikeprice{
+    text-align: center;
+}
+
+.textonimage{
+    background-color:rgba(255, 255, 255, 0.75) ;
+    position: relative;
+    bottom: 250px;
+    /* padding-bottom: 50px; */
+}
+.description{
+    text-align: center;
+}
+.seemore{
+    margin-left: 30%;
+}
+.heading{
+    text-align: center;
+}
+.lastContainer{
+    position: relative;
+    bottom: 200px;
+
+}
+.picContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin:6px;
+    justify-content: space-evenly;
+
+}
+.lastbox{
+    width : 30%;
+}
+
+.lastimages{
+    width: 100%;
+    
+}

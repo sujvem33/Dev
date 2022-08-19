@@ -59,6 +59,14 @@ body{
 .menu{
     background-color: yellow;
     color: black;
+    display: flex;
+    
+
+}
+.menuitem{
+    
+    color: black;
+    
 
 }
 .home{
@@ -87,5 +95,6 @@ body{
 }
 #item{
     color:rgb(50, 205, 99);
+    font-size: px;  
     
 }

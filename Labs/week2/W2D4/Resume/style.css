@@ -1,0 +1,38 @@
+body{
+    background-color: beige;
+    border: solid #dbdbdb;
+    
+}
+.title{
+    text-align: center;    
+}
+.img{
+    height: 200px;
+}
+.intro{
+    display: flex;
+    justify-content: space-evenly;
+    border: solid #dbdbdb;
+    border-radius: 20px;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+}
+.info1{
+    
+    background-color: blue;
+}
+.info2 {
+    
+    background-color: red;
+}
+.infobox{
+
+    border: solid #dbdbdb;
+    border-radius: 20px;
+    text-align: center;
+
+}

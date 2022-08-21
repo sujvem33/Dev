@@ -1,268 +1,268 @@
 let menu= {
     Lunch: [
         {
-            name: "Pancakes",
-            smallprice: "$6",
-            spicelevel: "Extra Pancake",
-            largeprice: "$7"
+            name: "Chicken Biryani",
+            smallprice: "$10",
+            spicelevel: "High",
+            largeprice: "$12"
         },
         {
-            name: "Omelette",
-            smallprice: "$7",
-            spicelevel: "Extra Egg",
-            largeprice: "$8"
+            name: "Goat Biryani",
+            smallprice: "$12",
+            spicelevel: "High",
+            largeprice: "$15"
         },
         {
-            name: "Waffles",
-            smallprice: "$6",
-            spicelevel: "Lg",
-            largeprice: "$7"
+            name: "Salad",
+            smallprice: "$10",
+            spicelevel: "Medium",
+            largeprice: "$12"
         },
         {
-            name: "Home Fries",
-            smallprice: "$5",
-            spicelevel: "Lg",
-            largeprice: "$6"
+            name: "Chicken Fried Rice",
+            smallprice: "$9",
+            spicelevel: "Medium",
+            largeprice: "$11"
         },
         {
-            name: "Hash Browns",
-            smallprice: "$5",
-            spicelevel: "Lg",
-            largeprice: "$6"
+            name: "Noodles",
+            smallprice: "$10",
+            spicelevel: "Low",
+            largeprice: 12
         },
         {
-            name: "Fruit Cup",
-            smallprice: "$4",
-            spicelevel: "Lg",
-            largeprice: "$5"
+            name: "Thali",
+            smallprice: "$10",
+            spicelevel: "Low",
+            largeprice: "$12"
         },
     ],
     Brunch: [
         {
-            name: "sandwich",
-            smallprice: "$6",
-            spicelevel: "Extra Pancake",
-            largeprice: "$7"
+            name: "Omlette",
+            smallprice: "$12",
+            spicelevel: "Low",
+            largeprice: "$14"
         },
         {
-            name: "Omelette",
+            name: "Bisibila bath",
             smallprice: "$7",
-            spicelevel: "Extra Egg",
+            spicelevel: "Medium",
             largeprice: "$8"
         },
         {
-            name: "Waffles",
-            smallprice: "$6",
-            spicelevel: "Lg",
-            largeprice: "$7"
+            name: "Chicken Butter Masala",
+            smallprice: "$10",
+            spicelevel: "Medium",
+            largeprice: "$12"
         },
         {
-            name: "Home Fries",
-            smallprice: "$5",
-            spicelevel: "Lg",
-            largeprice: "$6"
+            name: "Chicken Salad",
+            smallprice: "$8",
+            spicelevel: "Low",
+            largeprice: "$10"
         },
         {
-            name: "Hash Browns",
-            smallprice: "$5",
-            spicelevel: "Lg",
-            largeprice: "$6"
+            name: "Pasta",
+            smallprice: "$10",
+            spicelevel: "Medium",
+            largeprice: "$12"
         },
         {
-            name: "Fruit Cup",
-            smallprice: "$4",
-            spicelevel: "Lg",
-            largeprice: "$5"
+            name: "Green Salad with Fruits",
+            smallprice: "$12",
+            spicelevel: "Low",
+            largeprice: "$14"
         },
     ],
     Dinner: [
         {
-            name: "pizza",
-            smallprice: "$6",
-            spicelevel: "Extra Pancake",
-            largeprice: "$7"
+            name: "Chicken Biryani",
+            smallprice: "$10",
+            spicelevel: "High",
+            largeprice: "$12"
         },
         {
-            name: "Omelette",
-            smallprice: "$7",
-            spicelevel: "Extra Egg",
-            largeprice: "$8"
+            name: "Goat Biryani",
+            smallprice: "$12",
+            spicelevel: "High",
+            largeprice: "$15"
         },
         {
-            name: "Waffles",
-            smallprice: "$6",
-            spicelevel: "Lg",
-            largeprice: "$7"
+            name: "Chicken Curry with Rice",
+            smallprice: "$10",
+            spicelevel: "Medium",
+            largeprice: "$12"
         },
         {
-            name: "Home Fries",
-            smallprice: "$5",
-            spicelevel: "Lg",
-            largeprice: "$6"
+            name: "Chicken Fried Rice",
+            smallprice: "$9",
+            spicelevel: "Medium",
+            largeprice: "$11"
         },
         {
-            name: "Hash Browns",
-            smallprice: "$5",
-            spicelevel: "Lg",
-            largeprice: "$6"
+            name: "Noodles",
+            smallprice: "$10",
+            spicelevel: "Low",
+            largeprice: 12
         },
         {
-            name: "Fruit Cup",
-            smallprice: "$4",
-            spicelevel: "Lg",
-            largeprice: "$5"
+            name: "Thai Fried Rice",
+            smallprice: "$10",
+            spicelevel: "Low",
+            largeprice: "$12"
         },
     ],
     Desert: [
         {
-            name: "Pancakes",
+            name: "Choclate Ice Cream",
             smallprice: "$6",
-            spicelevel: "Extra Pancake",
-            largeprice: "$7"
-        },
-        {
-            name: "Omelette",
-            smallprice: "$7",
-            spicelevel: "Extra Egg",
+            spicelevel: "NA",
             largeprice: "$8"
         },
         {
-            name: "Waffles",
+            name: "Vanilla Ice Cream",
+            smallprice: "$7",
+            spicelevel: "NA",
+            largeprice: "$8"
+        },
+        {
+            name: "Sundae",
             smallprice: "$6",
-            spicelevel: "Lg",
+            spicelevel: "NA",
             largeprice: "$7"
         },
         {
-            name: "Home Fries",
+            name: "Brownie",
             smallprice: "$5",
-            spicelevel: "Lg",
+            spicelevel: "NA",
             largeprice: "$6"
         },
         {
-            name: "Hash Browns",
+            name: "Cheese Cake",
             smallprice: "$5",
-            spicelevel: "Lg",
+            spicelevel: "NA",
             largeprice: "$6"
         },
         {
-            name: "Fruit Cup",
+            name: "Fruit Custard",
             smallprice: "$4",
-            spicelevel: "Lg",
+            spicelevel: "NA",
             largeprice: "$5"
         },
     ],
     Beverages: [
         {
-            name: "Pancakes",
+            name: "Coke",
             smallprice: "$6",
-            spicelevel: "Extra Pancake",
+            spicelevel: "NA",
             largeprice: "$7"
         },
         {
-            name: "Omelette",
+            name: "Sprite",
             smallprice: "$7",
-            spicelevel: "Extra Egg",
+            spicelevel: "NA",
             largeprice: "$8"
         },
         {
-            name: "Waffles",
+            name: "Blue Moon",
             smallprice: "$6",
-            spicelevel: "Lg",
+            spicelevel: "NA",
             largeprice: "$7"
         },
         {
-            name: "Home Fries",
+            name: "Corona",
             smallprice: "$5",
-            spicelevel: "Lg",
+            spicelevel: "NA",
             largeprice: "$6"
         },
         {
-            name: "Hash Browns",
+            name: "Wine",
             smallprice: "$5",
-            spicelevel: "Lg",
+            spicelevel: "NA",
             largeprice: "$6"
         },
         {
-            name: "Fruit Cup",
+            name: "Champaigne",
             smallprice: "$4",
-            spicelevel: "Lg",
+            spicelevel: "NA",
             largeprice: "$5"
         },
     ],
     Entrees: [
         {
-            name: "Pancakes",
-            smallprice: "$6",
-            spicelevel: "Extra Pancake",
-            largeprice: "$7"
+            name: "Chicken Biryani",
+            smallprice: "$10",
+            spicelevel: "High",
+            largeprice: "$12"
         },
         {
-            name: "Omelette",
-            smallprice: "$7",
-            spicelevel: "Extra Egg",
-            largeprice: "$8"
+            name: "Goat Biryani",
+            smallprice: "$12",
+            spicelevel: "High",
+            largeprice: "$15"
         },
         {
-            name: "Waffles",
-            smallprice: "$6",
-            spicelevel: "Lg",
-            largeprice: "$7"
+            name: "Chicken Tikka Masala",
+            smallprice: "$10",
+            spicelevel: "Medium",
+            largeprice: "$12"
         },
         {
-            name: "Home Fries",
-            smallprice: "$5",
-            spicelevel: "Lg",
-            largeprice: "$6"
+            name: "Chicken Fried Rice",
+            smallprice: "$9",
+            spicelevel: "Medium",
+            largeprice: "$11"
         },
         {
-            name: "Hash Browns",
-            smallprice: "$5",
-            spicelevel: "Lg",
-            largeprice: "$6"
+            name: "Noodles",
+            smallprice: "$10",
+            spicelevel: "Low",
+            largeprice: 12
         },
         {
-            name: "Fruit Cup",
-            smallprice: "$4",
-            spicelevel: "Lg",
-            largeprice: "$5"
+            name: "Thali",
+            smallprice: "$10",
+            spicelevel: "Low",
+            largeprice: "$12"
         },
     ],
     Appetizers: [
         {
-            name: "Pancakes",
-            smallprice: "$6",
-            spicelevel: "Extra Pancake",
-            largeprice: "$7"
+            name: "Chilli Chicken",
+            smallprice: "$10",
+            spicelevel: "High",
+            largeprice: "$13"
         },
         {
-            name: "Omelette",
-            smallprice: "$7",
-            spicelevel: "Extra Egg",
+            name: "Chicken Magestic",
+            smallprice: "$10",
+            spicelevel: "High",
+            largeprice: "$13"
+        },
+        {
+            name: "Fried Shrimp",
+            smallprice: "$14",
+            spicelevel: "Low",
+            largeprice: "$17"
+        },
+        {
+            name: "Apollo Fish",
+            smallprice: "$13",
+            spicelevel: "Medium",
+            largeprice: "$16"
+        },
+        {
+            name: "Gobi Manchurian",
+            smallprice: "$5",
+            spicelevel: "Medium",
             largeprice: "$8"
         },
         {
-            name: "Waffles",
-            smallprice: "$6",
-            spicelevel: "Lg",
-            largeprice: "$7"
-        },
-        {
-            name: "Home Fries",
-            smallprice: "$5",
-            spicelevel: "Lg",
-            largeprice: "$6"
-        },
-        {
-            name: "Hash Browns",
-            smallprice: "$5",
-            spicelevel: "Lg",
-            largeprice: "$6"
-        },
-        {
-            name: "Fruit Cup",
-            smallprice: "$4",
-            spicelevel: "Lg",
-            largeprice: "$5"
+            name: "Lamb Chops",
+            smallprice: "$10",
+            spicelevel: "High",
+            largeprice: "$15"
         }
     ]
 }

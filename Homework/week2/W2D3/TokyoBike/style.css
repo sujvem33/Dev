@@ -17,7 +17,7 @@
     text-align: center;
 }
 .bikeContainer{
-    background-color: grey;
+    background-color: #E6EAEA;
     position: relative;
     bottom: 200px;
 }
@@ -34,6 +34,7 @@
 }
 .bike{
     width: 100%;
+    
 }
 .sporttype{
     text-align: center;
@@ -56,6 +57,7 @@
 }
 .heading{
     text-align: center;
+    border-radius: 20px;
 }
 .lastContainer{
     position: relative;

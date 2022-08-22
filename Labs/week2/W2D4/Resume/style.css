@@ -1,25 +1,24 @@
 body{
-    background-color: beige;
+    background-color: rgb(160, 168, 147); 
     border: solid #dbdbdb;
     
+    
 }
+
 .title{
     text-align: center;    
 }
 .img{
     height: 200px;
 }
-.intro{
-    display: flex;
-    justify-content: space-evenly;
-    border: solid #dbdbdb;
-    border-radius: 20px;
-}
+
 .info{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    margin: 10px ;
+    font-size: smaller;
 }
 .info1{
     
@@ -33,6 +32,46 @@ body{
 
     border: solid #dbdbdb;
     border-radius: 20px;
-    text-align: center;
+    text-align: left;
+    margin: 10px;
+    font-size: xx-small;
 
 }
+.intro{
+    display: flex;
+    justify-content: space-between;
+    border: solid #dbdbdb;
+    border-radius: 20px;
+    margin: 10px;
+}
+.summaryheading{
+    font-style: italic;
+    border-radius: 4px;
+    border: 20px;
+    width: 10%;
+    background-color: blue;
+    text-align: center;
+}
+.summaryheading:hover{
+    background-color: red;
+    
+}
+.mysummary{
+    color: black;
+    flex-wrap: wrap;
+    margin: 60px;
+
+}
+.myimage{  
+    margin: 30px; 
+    border-style: calc();
+}
+.summarydescription{
+    color: rgb(33, 10, 57);
+}
+.edu{
+    height: 40px;
+}
+
+
+

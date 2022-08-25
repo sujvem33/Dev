@@ -1,0 +1,62 @@
+body{
+    background-color:rgb(19, 11, 125);
+    color: solid goldenrod;
+    font-family:'Courier New', Courier, monospace;
+}
+.topText{
+    color: gold;
+}
+.movieContainer1{
+    display: none;
+    /* visibility: hidden; */
+}
+.movieContainer2{
+    display: none;
+    /* visibility: hidden; */
+}
+.movieContainer3{
+    display: block;
+    margin: 100px;
+}
+.movieName3{
+    position: relative;
+    bottom: 50px;
+    height: 5%;
+    width: 50%;
+   
+}
+.movieName3:hover{
+    transform: scale(1.5);
+    transition: 3s;
+    
+}
+.displayhere{
+    position: relative;
+    bottom: 95px;
+    display: block;
+    color :gold;
+    border-radius: 10px;
+    border-color: rgb(221, 209, 209);
+    font-size:medium;
+    
+}
+.synopsis3{
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: gold;
+    position: fixed;
+    align-content: left;
+    left: 0px;
+    top : 20%;   
+}
+.trailer3{
+    
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: gold;
+    position: fixed;
+    align-content: left;
+    left: 0px;
+    top : 30%;   
+}
+

@@ -1,0 +1,64 @@
+body{
+    background-color:rgb(202, 17, 17);
+    color:rgb(47, 5, 130);
+    font-family:'Courier New', Courier, monospace;
+}
+.topText{
+    color: rgb(47, 5, 130);
+}
+
+.movieContainer1{
+    display: none;
+    
+}
+.movieContainer2{
+    display: block;
+    margin: 100px;
+}
+.movieContainer3{
+    display: none;
+   
+}
+.movieName2{
+    position: relative;
+    bottom: 50px;
+    left : 5px;
+}
+.movieName2:hover{
+    transform: scale(1.5);
+    transition: 3s;
+}
+.displayhere{
+    position: relative;
+    bottom: 95px;
+    display: block;
+    color :rgb(47, 5, 130);
+    border-radius: 10px;
+    border-color: rgb(221, 209, 209);
+    font-size:medium;
+    left : 5px;
+}
+
+.synopsis2{
+    padding-bottom: 2px;
+    text-align: center;
+    background-color: rgb(47, 5, 130);
+    position: fixed;
+    align-content: left;
+    left: 0px;
+    top : 20%;
+    
+}
+.trailer2{
+    
+    padding-bottom: 2px;
+    text-align: center;
+    background-color: rgb(47, 5, 130);
+    position: fixed;
+    align-content: left;
+    left: 0px;
+    top : 30%;
+    
+    
+}
+

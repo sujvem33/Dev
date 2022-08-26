@@ -1,0 +1,36 @@
+body{
+    background-color: beige;
+}
+.logo{
+    height: 50px;
+    width: 100px;
+}
+/* .Emergency{
+    color: red;
+} */
+#liveAlertBtn{
+    background-color: red;
+}
+.navbar{
+    background-color:bisque;
+}
+
+.screen{
+    margin: 30px;
+    align-items: center;
+    width: 95%;
+    height: 80vh;
+}
+.image{
+    align-content: center;
+    margin: 20px;
+    align-items: center;
+    width: 95%;
+    height: 40vh;
+
+}
+
+.form{
+    width:50%
+}
+

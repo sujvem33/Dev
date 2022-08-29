@@ -2,6 +2,8 @@
 	const wheel = document.querySelector('.sa');
 	const startButton = document.querySelector('.spin');
 	const display = document.querySelector('.display');
+	const music = document.querySelector(".spin")
+	
 
 	
 	
@@ -31,7 +33,7 @@
 	  wheel.style.transition = 'all ease 1s';
 	  wheel.style.transform = `rotate(${deg}deg)`;
 	  wheel.classList.add('blur');
-	  startButton.getElementById("myAudio").play();
+	  
 	});
   
 	wheel.addEventListener('transitionend', () => {
@@ -42,6 +44,10 @@
 	  wheel.style.transform = `rotate(${actualDeg}deg)`;
 	  handleWin(actualDeg);
 	});
+
+	music.addEventListener("click", function(){
+	document.getElementById("myAudio").play();
+});
 })();
   
 

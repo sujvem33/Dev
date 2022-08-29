@@ -22,14 +22,14 @@
 	}
   
 	const handleWin = (actualDeg) => {
-	  const winningSymbolNr = Math.ceil(actualDeg / zoneSize);
-	  display.innerHTML = displaytext[winningSymbolNr];
+	  const winningText = Math.ceil(actualDeg / zoneSize);
+	  display.innerHTML = displaytext[winningText];
 	}
 	startButton.addEventListener('click', () => {
 		
 	  display.innerHTML = "";
 	  startButton.style.pointerEvents = 'none';
-	  deg = Math.floor(5000 + Math.random() * 5000);
+	  deg = Math.floor(3000 + Math.random() * 3000);
 	  wheel.style.transition = 'all ease 1s';
 	  wheel.style.transform = `rotate(${deg}deg)`;
 	  wheel.classList.add('blur');

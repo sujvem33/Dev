@@ -1,0 +1,31 @@
+.battlefield{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin:40px;
+    border: 80px;
+    border-radius: 2px;
+    border-color:solid grey;
+    width: 80%;
+    height: 80%;
+}
+.ussHelloworld{
+
+    width: 200px;
+    height: 400px;
+    margin: 30px;
+    border: 2px solid black;
+    border-radius: 2px;
+
+
+}
+.alien{
+    width: 200px;
+    height: 400px;
+    margin: 30px;
+    border: 2px solid black;
+    border-radius: 2px;
+
+}
+
+

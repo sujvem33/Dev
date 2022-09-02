@@ -1,0 +1,6 @@
+music = (soundID) => {
+        soundID.play();
+        
+}
+
+

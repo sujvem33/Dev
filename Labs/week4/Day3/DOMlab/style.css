@@ -1,0 +1,17 @@
+.soundtable{
+    height: 62vh;
+    border: solid salmon;
+}
+.row{
+    margin:1em;
+    display: flex;
+    padding-left: 30%;
+
+}
+
+.beatpad{
+    border: solid orange;
+    width: 60px;
+    height:60px;
+    margin-left: 20px;
+}

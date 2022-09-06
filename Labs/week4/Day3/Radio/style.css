@@ -1,0 +1,9 @@
+.radio{
+    border-color: solid blue;
+    height: 62vh;
+    width: 900px;
+}
+.stations{
+    margin:1em;
+    display: flex;
+}

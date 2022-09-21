@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-
 require('dotenv').config()
 
 mongoose.connect(process.env.MONGO_URI).then( () => {
@@ -9,27 +8,38 @@ mongoose.connect(process.env.MONGO_URI).then( () => {
   });
 
 const Fruit = require('./models/fruit.js');   
-const fruits = require('./models/fruits')
+// const fruits = require('./models/fruits')
 app.set('view engine', 'jsx');
 app.engine('jsx', require('express-react-views').createEngine());
-
+app.use(express.urlencoded({extended:false}));
 
 app.use((req, res, next) => {
     console.log('I run for all routes');
     next();
 });
 
-app.use(express.urlencoded({extended:false}));
+app.get('/', (req, res) => {
+    res.send('Hello, Welcome to Fruits App');
+});
+
 
 // app.get('/fruits/', (req, res) => {
-//     res.send(fruits);
+//     res.send('Index');
 // });
 
 
-app.get('/fruits', function(req, res){
-    res.render('Index', { fruits: fruits });
-}); 
+// app.get('/fruits', (req, res) => {
+//     res.render('Index', { fruits: fruits });
+// }); 
 
+
+app.get('/fruits', (req, res)=>{
+    Fruit.find({}, (error, allFruits)=>{
+        res.render('Index', {
+            fruits: allFruits
+        });
+    });
+});
 
 app.get('/fruits/new', (req, res) => {
     res.render('New');
@@ -42,20 +52,27 @@ app.post('/fruits', (req, res)=>{
         req.body.readyToEat = false; 
     }
     Fruit.create(req.body, (error, createdFruit)=>{
-        res.send(createdFruit);
+        res.redirect('/fruits');
     });
 });
 
 
-app.get('/fruits/:indexOfFruitsArray', (req, res) => {
-    res.render('Show', {fruit:fruits[req.params.indexOfFruitsArray]});
-}); 
+app.get('/fruits/:id', (req, res)=>{
+    Fruit.findById(req.params.id, (err, foundFruit)=>{
+        res.render('Show', {
+            fruit:foundFruit
+        });
+    });
+});
+
+
+// app.get('/fruits/:indexOfFruitsArray', (req, res) => {
+//     res.render('Show', {fruit:fruits[req.params.indexOfFruitsArray]});
+// }); 
 
 // app.get('/fruits/:indexOfFruitsArray', (req, res) => {
 //     res.send(fruits[req.params.indexOfFruitsArray]);
 // });
-
-
 
 
 app.listen(3000, () => {

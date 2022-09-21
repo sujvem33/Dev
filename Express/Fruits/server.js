@@ -4,14 +4,9 @@ const mongoose = require('mongoose');
 
 require('dotenv').config()
 
-mongoose.connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true
-  });
-  mongoose.connection.once('open', ()=> {
+mongoose.connect(process.env.MONGO_URI).then( () => {
     console.log('connected to mongo');
-
+  });
 
 const Fruit = require('./models/fruit.js');   
 const fruits = require('./models/fruits')
@@ -52,10 +47,9 @@ app.post('/fruits', (req, res)=>{
 });
 
 
-app.get('/fruits/:indexOfFruitsArray', function(req, res){
+app.get('/fruits/:indexOfFruitsArray', (req, res) => {
     res.render('Show', {fruit:fruits[req.params.indexOfFruitsArray]});
 }); 
-
 
 // app.get('/fruits/:indexOfFruitsArray', (req, res) => {
 //     res.send(fruits[req.params.indexOfFruitsArray]);
@@ -63,6 +57,7 @@ app.get('/fruits/:indexOfFruitsArray', function(req, res){
 
 
 
-app.listen(3000,() => {
+
+app.listen(3000, () => {
     console.log('listening');
 });

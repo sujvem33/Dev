@@ -4,11 +4,11 @@ class New extends React.Component {
   render() {
     return (
       <DefaultLayout title={"New Log Page"}>
-        <div>
+        <div >
           <form action="/captainlogs" method="POST">
-            title: <input type="text" name="title" />
+            title: <input type="text" name="title" required />
             <br />
-            entry: <input type="text" name="entry" />
+            entry: <input type="text" name="entry" required />
             <br />
             Ship is Broken<input type="checkbox" name="isShipBroken" />
             <br />

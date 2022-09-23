@@ -19,6 +19,8 @@ app.use((req, res, next) => {
     next();
 });
 
+app.use(express.static('public'));
+
 
 app.get('/', (req, res)=>{
     res.send('Welcome to the Captains Log!')
@@ -37,13 +39,15 @@ app.get('/captainlogs/seed', (req,res)=> {
     CaptainLogs.create([
         {
             title: 'Log1',
-            entry : 'blahblahblah',
+            entry : 'Bad day',
             isShipBroken:true,
+            
         },
         {
             title: 'Log2',
-            entry : 'yeahyeahyeah',
+            entry : 'Great day',
             isShipBroken:false,
+            
         }
 
 ],(err,data)=>{

@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(202, 150, 108);
+    
+}
+
+.ButtonOnpage{
+    background-color: yellowgreen;
+    border: 20px;
+    border-radius:2px ;
+    color: white;
+}
+
+.logbox{
+    border-radius: 2px;
+    border: 20px blue;
+    box-sizing: border-box;
+    background: olive;
+    margin: 10px;
+    width: 50%;
+}

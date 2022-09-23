@@ -7,15 +7,17 @@ class Show extends React.Component {
         
       <DefaultLayout title={"Log Details"}>
         
-        <div>
+        <div class="logbox">
 
-          {captainlog.title} and  {captainlog.entry}
+          {captainlog.title} <br />   {captainlog.entry}
           <br /> 
-          {captainlog.isShipBroken ? "Ship is Broken":"Ship is not Broken"}
+          {captainlog.isShipBroken ? "Ship is Broken":"Ship is not Broken"} <br />Date created:
+          {captainlog.createdAt.toString()} <br /> Date updated:
+          {captainlog.updatedAt.toString()}
         <br/>
         <br/>
         <nav>
-        <a href="/captainlogs"> Back to Logs Dashboard</a>
+        <a href="/captainlogs" class="ButtonOnpage"> Back to Logs Dashboard</a>
         </nav>
         
         </div>

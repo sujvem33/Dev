@@ -4,7 +4,7 @@ const DefaultLayout = require("./layouts/default");
 class Edit extends React.Component {
   render() {
     return (
-      <DefaultLayout title="Edit Page">
+      <DefaultLayout title="Edit Log Page" >
          <form
           action={`/captainlogs/${this.props.captainlog._id}?_method=PUT`}
           method="POST"

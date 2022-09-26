@@ -46,6 +46,9 @@ app.get("/shoes", (req, res)=>{
 });
 
 
+
+
+
 app.get('/clothes/seed', (req,res)=> {
     Clothes.create([
         {
@@ -95,6 +98,101 @@ app.get('/shoes/seed', (req,res)=> {
     res.redirect('/shoes')
 })
 })
+
+
+
+
+app.get('/clothes/new', (req, res) =>{
+  res.render('New', {})
+})
+
+app.get('/shoes/new', (req, res) =>{
+  res.render('New', {})
+})
+
+app.post('/clothes',(req, res) => {
+    if(req.body.isAvailable === "on"){
+        req.body.isAvailable = true;
+    }
+    else{
+        req.body.isAvailable = false;
+    }
+    Clothes.create(req.body, (err, createdProduct) => {
+        console.log(err);
+    })
+    res.redirect('/clothes')
+})
+
+app.get("/clothes/:id/edit", (req, res) => {
+    Clothes.findById(req.params.id, (err, foundproduct) => {
+      console.log(err)
+      if (!err) {
+        res.render("Edit", {
+          product: foundproduct
+        });
+      } else {
+        res.send({ msg: err.message });
+      }
+    });
+  });
+
+  app.get("/shoes/:id/edit", (req, res) => {
+    Shoes.findById(req.params.id, (err, foundproduct) => {
+      console.log(err)
+      if (!err) {
+        res.render("Edit", {
+          product: foundproduct, type : "shoes"
+        });
+      } else {
+        res.send({ msg: err.message });
+      }
+    });
+  });
+
+app.put("/clothes/:id", (req, res) => {
+    if (req.body.isAvailable === "on") {
+      req.body.isAvailable = true;
+    } else {
+      req.body.isAvailable = false;
+    }
+    Clothes.findByIdAndUpdate(req.params.id, req.body, (err, updatedProduct) => {
+        console.log(err)
+      console.log(updatedProduct);
+      res.redirect(`/clothes/${req.params.id}`);
+    });
+  });
+  
+
+app.delete("/clothes/:id", (req, res) => {
+    Clothes.findByIdAndRemove(req.params.id, (err, data) => {
+      res.redirect("/clothes");
+    });
+  });
+  app.delete("/shoes/:id", (req, res) => {
+    Shoes.findByIdAndRemove(req.params.id, (err, data) => {
+      res.redirect("/shoes");
+    });
+  });
+
+app.get("/clothes/:id", (req, res) => {
+    Clothes.findById(req.params.id, (err,foundproduct) => {
+        console.log(err)
+      console.log("Found: ", foundproduct);
+      res.render("Show", {
+        product: foundproduct
+      });
+    });
+  });
+app.get("/shoes/:id", (req, res) => {
+    Shoes.findById(req.params.id, (err,foundproduct) => {
+        console.log(err)
+      console.log("Found: ", foundproduct);
+      res.render("Show", {
+        product: foundproduct
+      });
+    });
+  });
+
 
 app.listen(3000, () => {
     console.log('listening');

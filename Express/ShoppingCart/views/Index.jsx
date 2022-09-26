@@ -5,12 +5,8 @@ class Index extends React.Component {
   render() {
       const {products} = this.props;
       const {type} = this.props;
-      
-
-      
       console.log(products);
       console.log(type);
-     
       return (
               <DefaultLayout title = {"Products Page"} >
                <nav>
@@ -22,9 +18,9 @@ class Index extends React.Component {
                             <a href={`/${type}/${product.id}`}>
                                 {product.Name}</a>  
                                 <br/>   <br/>
-                               <button class="ButtonOnpage"> <a href={`/${type}/${product._id}/edit`}>Edit Product</a> </button> {" "} 
+                               <button className="ButtonOnpage"> <a href={`/${type}/${product._id}/edit`}>Edit Product</a> </button> {" "} 
                                <form action={`/${type}/${product._id}?_method=DELETE`} method="POST">
-                                    <input type="submit" value="DELETE" class="ButtonOnpage"/>
+                                    <input type="submit" value="DELETE" className="ButtonOnpage"/>
                                 </form>
                                 <br/>
                         </li>

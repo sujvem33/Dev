@@ -5,7 +5,7 @@ class New extends React.Component {
     return (
       <DefaultLayout title={"New Product Page"}>
         <div>
-          <form action="/clothes" method="POST">
+          <form action={`/${this.props.category}`} method="POST">
             Name: <input type="text" name="Name" />
             <br />
             Description: <input type="text" name="Description" />

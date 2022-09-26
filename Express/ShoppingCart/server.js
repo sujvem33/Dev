@@ -103,11 +103,11 @@ app.get('/shoes/seed', (req,res)=> {
 
 
 app.get('/clothes/new', (req, res) =>{
-  res.render('New', {})
+  res.render('New', {category:"clothes"})
 })
 
 app.get('/shoes/new', (req, res) =>{
-  res.render('New', {})
+  res.render('New', {category:"shoes"})
 })
 
 app.post('/clothes',(req, res) => {
@@ -121,6 +121,19 @@ app.post('/clothes',(req, res) => {
         console.log(err);
     })
     res.redirect('/clothes')
+})
+
+app.post('/shoes',(req, res) => {
+  if(req.body.isAvailable === "on"){
+      req.body.isAvailable = true;
+  }
+  else{
+      req.body.isAvailable = false;
+  }
+  Shoes.create(req.body, (err, createdProduct) => {
+      console.log(err);
+  })
+  res.redirect('/shoes')
 })
 
 app.get("/clothes/:id/edit", (req, res) => {

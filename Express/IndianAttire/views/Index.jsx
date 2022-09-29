@@ -8,7 +8,9 @@ class Index extends React.Component {
       console.log(products);
       console.log(type);
       return (
-              <DefaultLayout title = {"Suits Page"} >
+              <DefaultLayout title = {"Product Page"} >
+
+                <button className="ButtonOnpage">   <a href="/">Home Page</a> </button>
                <nav>
                  <button className="ButtonOnpage">   <a href={`/${type}/new`}>Add New Product</a> </button>
                 </nav>
@@ -23,6 +25,8 @@ class Index extends React.Component {
                                     <input type="submit" value="DELETE" className="ButtonOnpage"/>
                                 </form>
                                 <br/>
+                                <br/>
+                               
                         </li>
                 })}      
                 </ul>   

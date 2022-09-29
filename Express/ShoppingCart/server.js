@@ -181,7 +181,7 @@ app.delete("/clothes/:id", (req, res) => {
       res.redirect("/clothes");
     });
   });
-  app.delete("/shoes/:id", (req, res) => {
+app.delete("/shoes/:id", (req, res) => {
     Shoes.findByIdAndRemove(req.params.id, (err, data) => {
       res.redirect("/shoes");
     });

@@ -36,46 +36,91 @@ app.get('/', (req, res)=>{
 
 //-------------------New Route------------------------------------
 app.get('/coords/new', (req, res) =>{
-    res.render('New', {})
+    res.render('New', {type:"coords"})
 })
 
 app.get('/dresses/new', (req, res) =>{
-    res.render('New', {})
+    res.render('New', {type:"dresses"})
 })
 
 app.get('/lehengas/new', (req, res) =>{
-    res.render('New', {})
+    res.render('New', {type:"lehengas"})
 })
 
 app.get('/sarees/new', (req, res) =>{
-    res.render('New', {})
+    res.render('New', {type:"sarees"})
 })
 
 app.get('/suits/new', (req, res) =>{
-    res.render('New', {})
+    res.render('New', {type:"suits"})
 })
 
 //--------------------Post Routes------------------------------
+
 app.post('/coords',(req, res) => {
-    // if(req.body.isProductAvailable === "on"){
-    //     req.body.isProductAvailable = true;
-    // }
-    // else{
-    //     req.body.isProductAvailable = false;
-    // }
+    if(req.body.isProductAvailable === "on"){
+        req.body.isProductAvailable = true;
+    }
+    else{
+        req.body.isProductAvailable = false;
+    }
     Coord.create(req.body, (err, createdProduct) => {
-        if (!err) {
-            res.render("New", {
-              product: createdProduct, type : "coords"
-            });
-          } else {
-            res.send({ msg: err.message });
-          }
+        console.log(err);
     })
     res.redirect('/coords')
 })
 
+app.post('/dresses',(req, res) => {
+    if(req.body.isProductAvailable === "on"){
+        req.body.isProductAvailable = true;
+    }
+    else{
+        req.body.isProductAvailable = false;
+    }
+    Dress.create(req.body, (err, createdProduct) => {
+        console.log(err);
+    })
+    res.redirect('/dresses')
+})
 
+app.post('/lehengas',(req, res) => {
+    if(req.body.isProductAvailable === "on"){
+        req.body.isProductAvailable = true;
+    }
+    else{
+        req.body.isProductAvailable = false;
+    }
+    Lehenga.create(req.body, (err, createdProduct) => {
+        console.log(err);
+    })
+    res.redirect('/lehengas')
+})
+
+app.post('/sarees',(req, res) => {
+    if(req.body.isProductAvailable === "on"){
+        req.body.isProductAvailable = true;
+    }
+    else{
+        req.body.isProductAvailable = false;
+    }
+    Saree.create(req.body, (err, createdProduct) => {
+        console.log(err);
+    })
+    res.redirect('/sarees')
+})
+
+app.post('/suits',(req, res) => {
+    if(req.body.isProductAvailable === "on"){
+        req.body.isProductAvailable = true;
+    }
+    else{
+        req.body.isProductAvailable = false;
+    }
+    Suit.create(req.body, (err, createdProduct) => {
+        console.log(err);
+    })
+    res.redirect('/suits')
+})
 //--------------------------Edit Routes --------------------------
 app.get("/coords/:id/edit", (req, res) => {
     Coord.findById(req.params.id, (err, foundProduct) => {

@@ -1,5 +1,5 @@
 body{
-    background-color: yellowgreen;
+    background-color: white;
 }
 
 
@@ -8,4 +8,48 @@ body{
     display: flex;
     flex-direction:row ;
     justify-content: space-between;
+}
+
+.pageNavigationBar{
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-around;
+    border: 1px;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: palevioletred;
+  
+
+}
+
+.title{
+    color: palevioletred;
+    font-style: italic;
+}
+
+
+
+.footer{
+    background-color: #56CCF2;
+    padding: .25em 0;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start ;
+    align-items: center;
+}
+
+.instalogo{
+    height: 20px;
+    width: 20px;
+
+}
+
+.facebooklogo{
+    height: 20px;
+    width: 20px;
 }

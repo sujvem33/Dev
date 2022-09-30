@@ -3,6 +3,7 @@ const DefaultLayout = require("./layouts/default");
 class New extends React.Component {
   render() {
     const {type} = this.props;
+    console.log(type);
     return (
       <DefaultLayout title={"New Product Page"}>
         <div>

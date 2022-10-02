@@ -9,17 +9,17 @@ class New extends React.Component {
         <h3 className="NewPageTitle"> Add New Product to {`${type}`}  </h3> <br />
         <div className="Newpage"> 
           <form action={`/${type}`} method="POST" className="newForm">
-            Name: <input type="text" name="Name" required/>
+          <label> Name :</label> <input type="text" name="Name" required/>
             <br />
-            Description: <input type="text" name="Description" required/>
+            <label>Description:</label> <input type="text" name="Description" required/>
             <br />
-            Price: <input type="text" name="Price" required/>
+            <label>Price:</label> <input type="text" name="Price" required/>
             <br />
-            Image: <input type="text" name="Image" required/>
+            <label>Image address:</label> <input type="text" name="Image" required/>
             <br />
-            isProductAvailable <input type="checkbox" name="isProductAvailable" />
+            <label> Is Product Available: </label><input type="checkbox" name="isProductAvailable" />
             <br />
-            <input type="submit" name="" value="Create Product" />
+            <input type="submit" name="" value="Create Product" className="submitBtn"/>
           </form>
         </div>
       </DefaultLayout>

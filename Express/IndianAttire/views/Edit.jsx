@@ -11,30 +11,26 @@ class Edit extends React.Component {
          <form
           action={`/${type}/${this.props.product._id}?_method=PUT`}
           method="POST" className="editForm">
-          Name :{" "}
-          <input
-            type="text"
-            name="Name"
-            defaultValue={this.props.product.Name}
-            required />
-          <br />
-          Description:{" "}
+          <label> Name :</label>
+          <input type="text"name="Name" defaultValue={this.props.product.Name} required />
+          
+          <label>Description:</label>
           <input type="text" name="Description" defaultValue={this.props.product.Description}required />
           <br />
-          Price:{" "}
+          <label>Price:</label>
           <input type="text" name="Price" defaultValue={this.props.product.Price} required />
           <br />
-          Image:{" "}
+          <label>Image address:</label>
           <input type="text" name="Image" defaultValue={this.props.product.Image} required />
           <br />
-          Is Product Available: 
+          <label> Is Product Available: </label>
           {this.props.product.isProductAvailable ? (
             <input type="checkbox" name="isProductAvailable" defaultChecked />
           ) : (
             <input type="checkbox" name="isProductAvailable" />
           )}
           <br />
-          <input type="submit" value="Submit Changes" />
+          <input type="submit" value="Submit Changes" className="submitBtn" />
         </form>
         </div>
       </DefaultLayout>

@@ -16,10 +16,9 @@ class DefaultLayout extends React.Component {
                     <div className="nav">
                     <a href="/" > <img src="/images/logo.png" alt="logo" className="logo" /> </a>
                         <div className="nav-items">
-                            <div className="search">
-                                <input type="text" class="search-box" placeholder="search products" />
-                                <button className="searchbtn">search</button>
-                            </div>
+                        <form class="search">
+                             <input class="search" type="search" placeholder="Search products"></input>
+                        </form>
                             <a href="#"><img src="/images/userimage.png"></img></a>
                             <a href="#"><img src="/images/carticon.png"></img></a>
                         </div>

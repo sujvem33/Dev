@@ -6,17 +6,15 @@ class DefaultLayout extends React.Component {
       <>
         <html>
           <head>
-            <title>{this.props.title}</title>
+          <title>{this.props.title}</title>
             <link rel="stylesheet" href="/css/app.css"></link>
-
-            <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'></link>
           </head>
           <body>
-            <h1>{this.props.title}</h1>
             
+          
             <nav className="navbar"> 
                     <div className="nav">
-                        <img src="/images/logo.png" alt="logo" className="logo" />
+                    <a href="/" > <img src="/images/logo.png" alt="logo" className="logo" /> </a>
                         <div className="nav-items">
                             <div className="search">
                                 <input type="text" class="search-box" placeholder="search products" />
@@ -28,7 +26,7 @@ class DefaultLayout extends React.Component {
                     </div>
 
                     <ul className="linksContainer">
-                          <li className="link-item"><a href="/" className="link"> Home</a></li>
+                          
                           <li className="link-item"><a href="/coords" className="link"> Coords</a></li>
                           <li className="link-item"><a href="/dresses" className="link"> Dresses</a></li>
                           <li className="link-item"><a href="/lehengas" className="link"> Lehengas</a></li>
@@ -36,11 +34,37 @@ class DefaultLayout extends React.Component {
                           <li className="link-item"><a href="/suits" className="link"> Suits</a></li>
                     </ul>
             </nav>
-
-            
-
-
+            <br /> 
+            <h1>{this.props.title}</h1>
+            <br /> 
             {this.props.children}
+          <br /> <br />
+          <footer className="footer">
+              <div className="footercontent">
+                <img src="/images/logo.png" alt="" className="footerlogo" />
+                
+                      <div className="Termslinks">
+                        <p>CUSTOMER POLICIES</p>
+                        <a href="#" className="sociallink">Terms Of Use</a>
+                        <a href="#" className="sociallink">Privacy Policy</a>
+                        <a href="#" className="sociallink">Shipping</a>
+                        <a href="#" className="sociallink">Refund & Returns</a>
+                        <a href="#" className="sociallink">Contact Us</a>
+                      </div>
+                      <div className="sociallinks">   
+                           
+                        <a href="#" className="sociallink"><img src="/images/fbicon.png" className="sociallogo"></img></a>
+                        <a href="#" className="sociallink"><img src="/images/instaicon.png" className="sociallogo"></img></a>
+                        <a href="#" className="sociallink"><img src="/images/Twittericon.png" className="sociallogo"></img></a>
+                        <a href="#" className="sociallink"><img src="/images/YouTubelogo.jpg" className="sociallogo"></img></a>
+                      </div> 
+              </div>
+                      <p class="Aboutus">About Company</p>
+                      <p className="info">
+                            The Indian-e-fashion was established to honour our country’s local artisans and weavers and we dedicate our efforts towards keeping traditional arts and weaves alive by using only exquisite handloom/handmade materials. We also customise the product of your choice to suit your needs like modifying sleeve design, length, fit and other specifications.
+                      </p>
+          </footer>
+         
           </body>
           <script src="/js/main.js"></script>
         </html>

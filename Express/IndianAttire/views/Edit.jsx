@@ -5,25 +5,27 @@ class Edit extends React.Component {
   render() {
     const {type} = this.props;
     return (
-      <DefaultLayout title="Edit Product Page">
+      <DefaultLayout>
+        <h3 className="editPageTitle"> Edit {`${this.props.product.Name}`} </h3> <br />
+        <div className="editPage">
          <form
           action={`/${type}/${this.props.product._id}?_method=PUT`}
-          method="POST">
-          Name:{" "}
+          method="POST" className="editForm">
+          Name :{" "}
           <input
             type="text"
             name="Name"
             defaultValue={this.props.product.Name}
-          />
+            required />
           <br />
           Description:{" "}
-          <input type="text" name="Description" defaultValue={this.props.product.Description} />
+          <input type="text" name="Description" defaultValue={this.props.product.Description}required />
           <br />
           Price:{" "}
-          <input type="text" name="Price" defaultValue={this.props.product.Price} />
+          <input type="text" name="Price" defaultValue={this.props.product.Price} required />
           <br />
           Image:{" "}
-          <input type="text" name="Image" defaultValue={this.props.product.Image} />
+          <input type="text" name="Image" defaultValue={this.props.product.Image} required />
           <br />
           Is Product Available: 
           {this.props.product.isProductAvailable ? (
@@ -34,6 +36,7 @@ class Edit extends React.Component {
           <br />
           <input type="submit" value="Submit Changes" />
         </form>
+        </div>
       </DefaultLayout>
     );
   }

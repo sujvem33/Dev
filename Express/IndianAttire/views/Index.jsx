@@ -8,28 +8,24 @@ class Index extends React.Component {
       console.log(products);
       console.log(type);
       return (
-              <DefaultLayout title = {"Product Page"} >
-
-                <button className="ButtonOnpage">   <a href="/">Home Page</a> </button>
+              <DefaultLayout>
+                
                <nav>
-                 <button className="ButtonOnpage">   <a href={`/${type}/new`}>Add New Product</a> </button>
+                  <a href={`/${type}/new`} className="AddProductButton">Add New Product</a>
                 </nav>
-                <ul>
+                <br />
+                <div className='Indexpage'>
+                <div className="allProducts">
                     {products.map((product,i) =>{
-                        return <li key={i}>
+                        return <div key={i} className="eachProduct">
                             <a href={`/${type}/${product.id}`}>
-                                {product.Name}</a>  
-                                <br/>   <br/>
-                               <button className="ButtonOnpage"> <a href={`/${type}/${product._id}/edit`}>Edit Product</a> </button> {" "} 
-                               <form action={`/${type}/${product._id}?_method=DELETE`} method="POST">
-                                    <input type="submit" value="DELETE" className="ButtonOnpage"/>
-                                </form>
-                                <br/>
-                                <br/>
-                               
-                        </li>
+                            <img src={`${product.Image}`} className="productImage"></img> </a>  <br />  
+                                {product.Name} <br /> 
+                                Price  : {product.Price} 
+                        </div>
                 })}      
-                </ul>   
+                </div>  
+                </div> 
               </DefaultLayout>  
       );
   }

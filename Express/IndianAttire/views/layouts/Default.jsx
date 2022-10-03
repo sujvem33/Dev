@@ -19,8 +19,8 @@ class DefaultLayout extends React.Component {
                         <form class="search">
                              <input class="search" type="search" placeholder="Search products"></input>
                         </form>
-                            <a href="#"><img src="/images/userimage.png"></img></a>
-                            <a href="#"><img src="/images/carticon.png"></img></a>
+                            <a href="/userlogin"><img src="/images/userimage.png"></img></a>
+                            <a href="/cart"><img src="/images/carticon.png"></img></a>
                         </div>
                     </div>
 

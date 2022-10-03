@@ -19,7 +19,7 @@ class Show extends React.Component {
             ? "Available"
             : "Not Available"}
             <br/> <br/> <br/>            
-            <button className="ButtonOnShowpage">Add to Cart</button> <br/>
+            <button className="ButtonOnShowpage"> <a href={"/cart"} className="Editbutton" >Add to Cart</a></button> <br/>
             <button className="ButtonOnShowpage"> <a href={`/${type}/${product._id}/edit`} className="Editbutton" >Edit Product</a> </button> 
             <form action={`/${type}/${product._id}?_method=DELETE`} method="POST">
                   <input type="submit" value="DELETE" className="ButtonOnShowpage"/>

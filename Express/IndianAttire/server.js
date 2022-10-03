@@ -7,6 +7,13 @@ const Dress = require('./models/dresses.js');
 const Lehenga = require('./models/lehengas.js'); 
 const Saree = require('./models/sarees.js'); 
 const Suit = require('./models/suits.js'); 
+const User = require("./models/users.js");
+const Cart = require("./models/cart.js");
+const bcrypt = require("bcrypt");
+const session = require("express-session");
+const MongoStore = require('connect-mongo');
+const cors = require('cors');
+
 require('dotenv').config()
 
 
@@ -25,8 +32,122 @@ app.use((req, res, next) => {
 });
 
 app.use(express.static('public'));
+app.use(express.json())
+app.use(cors());
 
 
+const store = new MongoStore({
+  mongoUrl: process.env.MONGO_URI,
+  collection: 'sessions',
+  stringify: false
+});
+
+app.use(session({
+  secret: process.env.SECRET,
+  resave: false,
+  saveUninitialized: true,
+  store: store,
+}))
+
+//--------------------------------User Routes--------------------
+
+app.get("/userlogin", (req, res)=>{
+      res.render('Userlogin')
+});
+
+app.get("/userlogin/signup", (req, res) => {
+  res.render("Signup");
+});
+
+app.get("/userlogin/login", (req, res) => {
+  res.render("Login");
+});
+
+
+app.post("/userlogin/signup", async (req, res) => {
+  // encrypt password
+  req.body.password = await bcrypt.hash(
+    req.body.password,
+    await bcrypt.genSalt(10)
+  );
+  // create the New user
+  User.create(req.body)
+    .then((user) => {
+      // redirect to login page
+      res.redirect("/userlogin/login");
+    })
+    .catch((error) => {
+      // send error as json
+      console.log(error);
+      res.json({ error });
+    });
+});
+
+app.post("/userlogin/login", async (req, res) => {
+  const { username, password } = req.body;
+  // search for the user
+  User.findOne({ username })
+    .then(async (user) => {
+      // check if user exists
+      if (user) {
+        // compare password
+        const result = await bcrypt.compare(password, user.password);
+        if (result) {
+          // redirect to fruits page if successful
+          res.redirect("/");
+        } else {
+          // error if password doesn't match
+          res.json({ error: "password doesn't match" });
+        }
+      } else {
+        // send error if user doesn't exist
+        res.json({ error: "user doesn't exist" });
+      }
+    })
+    .catch((error) => {
+      // send error as json
+      console.log(error);
+      res.json({ error });
+    });
+});
+
+
+app.get("/logout", (req, res) => {
+  // destroy session and redirect to main page
+  req.session.destroy((err) => {
+    res.redirect("/");
+  });
+});
+
+
+
+//------------------------------Cart Route--------------
+
+// app.post("/coords/:id/addCart",  (req, res) => {
+//   const quantity = req.body;
+//   Coord.findById(req.params.id, (err, Product) => {
+//       if(err){
+//           console.log(err);
+//       }
+//       const product = {
+//           item: Product._id,
+//           qty: quantity,
+//           price: Product.price * quantity 
+//       }
+//       Cart.owner = req.user._id;
+//       Cart.items.push(product);
+//       Cart.save();
+//       res.redirect("/cart");
+//   })
+//   })
+  
+//   app.get("/coords/:id/cart",  (req, res) => {
+//       res.render("cart")
+//   })
+
+app.get("/cart",  (req, res) => {
+    res.render("cart")
+})
 
 //------------------------------HomePage Route--------------
 app.get('/', (req, res)=>{

@@ -8,7 +8,7 @@ class Cart extends React.Component {
               <DefaultLayout>
                    <div>
                    <form action="/product/<%= product._id %>/addCart" method="POST">
-                         <select name="quantity">
+                      <label>Select Quantity</label>   <select name="quantity">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                  <option value="3">3</option>

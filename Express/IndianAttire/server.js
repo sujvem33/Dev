@@ -112,38 +112,11 @@ app.post("/userlogin/login", async (req, res) => {
 });
 
 
-app.get("/logout", (req, res) => {
-  // destroy session and redirect to main page
-  req.session.destroy((err) => {
-    res.redirect("/");
-  });
-});
+
 
 
 
 //------------------------------Cart Route--------------
-
-// app.post("/coords/:id/addCart",  (req, res) => {
-//   const quantity = req.body;
-//   Coord.findById(req.params.id, (err, Product) => {
-//       if(err){
-//           console.log(err);
-//       }
-//       const product = {
-//           item: Product._id,
-//           qty: quantity,
-//           price: Product.price * quantity 
-//       }
-//       Cart.owner = req.user._id;
-//       Cart.items.push(product);
-//       Cart.save();
-//       res.redirect("/cart");
-//   })
-//   })
-  
-//   app.get("/coords/:id/cart",  (req, res) => {
-//       res.render("cart")
-//   })
 
 app.get("/cart",  (req, res) => {
     res.render("cart")

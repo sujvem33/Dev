@@ -1,0 +1,19 @@
+.App{
+    border: solid blue;
+}
+.Suji{
+    border: 2px solid red;
+}
+.Siva{
+    border : 2px solid green;
+}
+
+.sqr{
+    border:solid yellowgreen;
+    height: 100px;
+    width:100px
+}
+
+.row{
+    display: flex;
+}

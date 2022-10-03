@@ -1,19 +1,28 @@
 .App{
     border: solid blue;
-}
-.Suji{
-    border: 2px solid red;
-}
-.Siva{
-    border : 2px solid green;
+    background-color: yellowgreen;
+    align-items: center;
+    height: 650px;
 }
 
+
 .sqr{
-    border:solid yellowgreen;
+    border:solid red;
     height: 100px;
     width:100px
 }
 
 .row{
     display: flex;
+}
+
+.Player{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.board{
+    align-items: center;
+    margin-left: 38%;
 }

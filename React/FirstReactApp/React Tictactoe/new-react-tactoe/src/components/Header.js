@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header() {
   return (
-    <div className='gameBoard'>React Tactoe</div> 
+    <div className='gameBoard'> </div> 
 
   )
 }

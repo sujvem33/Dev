@@ -3,7 +3,7 @@ import Square from './Square'
 
 function Board() {
   return (
-    <div>
+    <div className='board'>
       <div className='row'>
           <Square />
           <Square />
@@ -19,9 +19,6 @@ function Board() {
           <Square />
           <Square />
       </div>
-
-
-
     </div>
   )
 }

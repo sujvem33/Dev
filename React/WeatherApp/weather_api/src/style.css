@@ -4,12 +4,13 @@ body{
 .weather-container {
   position: absolute;
   font-size: 14px;
-  top: 80px;
-  
-  align-items: center;
+  top: 70px;
+  align-items: left;
   text-align:left ;
-  height: 500px;
+  height: 100%;
   width: 100%;
+  background-size:cover;
+  background-repeat: no-repeat;
   
 }
 
